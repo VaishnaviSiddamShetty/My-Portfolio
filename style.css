@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 3s;
+    background-color: #fff;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 200px;
+}
+
+
+.nav .link ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.hero .nav .logo {
+    color: #00008b;
+}
+
+.menu-toggle {
+    display: none; /* Initially hide the menu button */
+    cursor: pointer;
+}
+
+/* Styles for the side menu */
+.side-menu {
+    display: none; /* Initially hide the side menu */
+    /* Add your side menu styles here */
+}
+
+
+
+.nav .link ul a {
+    text-decoration: none;
+    color: #00008b;
+    font-weight: 600;
+    transition: all 2000ms ease-in-out;
+}
+
+ul a .active {
+    color: red;
+}
+
+.nav .link ul a:hover {
+    color: red;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 70px;
+
+}
+
+.main .men {
+    width: 400px;
+    transition: all 2000ms ease;
+    cursor: pointer;
+}
+
+.main .men:hover{
+    transform: scale(1.3);
+}
+
+.main .main-detil {
+    text-align: center;
+    color: #00008b;
+}
+
+.main .main-detil h1 {
+    font-size: 50px;
+
+}
+
+.main .main-detil h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.main .btn button {
+    padding: 8px 20px;
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid #00008b;
+    margin-right: 1rem;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.main .btn .btn-2 {
+    padding: 8px 30px;
+    background: #00008b;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: all 2000ms ease-in-out;
+
+}
+
+.main .btn .btn-2:hover {
+    background: #f4637b;
+    transform: scale(1.1);
+}
+
+.social i {
+    color: #00008b;
+    font-size: 40px;
+    margin: 0px 14px;
+    transition: all 2000ms ease-in-out;
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: #f4637b;
+}
+
+.sub-btn a{
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+/*------------about---------------*/
+
+#about {
+    padding: 60px 0;
+    color: #00008b;
+}
+.abt {
+    width: 100%;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+   
+}
+
+.about-col-1 {
+   flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 80%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 50px;
+    font-weight: 600;
+    color:#00008b;
+}
+
+
+.tab-titles {
+    display: flex;
+    color: #b54627;
+    margin: 10px 0 20px;
+}
+
+.tab-links {
+    margin-right: 200px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor:pointer;
+    position: relative;
+}
+
+
+.tab-links::after {
+    content:'';
+    width: 0;
+    height: 3px;
+    background: brown;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width:50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+       color: brown;
+       font-size: 14px;
+}
+
+.tab-contents{
+    display:none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+.certificate {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.certificates-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.certificates-list div h3 {
+    color: #800080;
+    font-size: 25px;
+}
+
+.certificates-list div h3 a{
+    text-decoration: none;
+    
+}
+.certificates-list div h3 a:hover {
+    color: red;
+}
+
+.certificates-list div p{
+    color:#f4637b;
+    transform: translateY(-10px);
+}
+
+
+/* ---------------------projects-----------------*/
+#projects {
+    padding: 30px 0;
+}
+.project{
+    width: 100%;
+    height: 100vh;
+}
+
+.sub-title {
+    text-align: center;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.projects-list h2{
+    color:#483D8B;
+}
+
+.projects-list div{
+    background: #F4A460;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, trasnform 0.5s;
+}
+ 
+.projects-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.projects-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.projects-list div:hover {
+    background-color: #f4637b;
+    transform: translateY(-10px);
+}
+
+
+/*----------------------contact-------------------*/
+.row{
+    width: 100%;
+    height: 70vh;
+    justify-content: space-around;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 35%;
+}
+
+.contact-left p{
+    margin-top:30px;
+}
+
+.contact-left p i{
+    color: crimson;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 60px;
+    margin-right:15px;
+    color:#00008b;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover {
+    color:#f4637b;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+display: inline-block;
+padding: 8px 20px;
+color: #fff;
+text-decoration: none;
+background: #00008b;
+border-radius: 30px;
+border:none;
+margin-right: 1rem;
+margin-bottom: 30px;
+
+}
+
+.btn.btn2:hover {
+    background:#f4637b;
+    transform: scale(1.1);
+}
+
+.contact-right form{
+    width: 100%;
+   
+}
+
+form input,form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #00008b;
+    padding: 15px;
+    margin: 15px 0;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+form.btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright {
+    width:100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #00008b;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+#msg {
+    color: brown;
+    margin-top: -25px;
+    display: block;
+}
+
+
+/*------------------------css for small screens----------*/
+
+@media only screen and (max-width: 768px) {
+  #home{
+    height: 100vh;
+  }
+
+ /* Align the logo to the left */
+ .nav {
+    flex-direction: column; /* Display items vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 20px; /* Add some padding */
+  }
+
+  /* Style for the logo */
+  .logo {
+    order: -1; /* Move the logo to the top */
+    margin-bottom: 10px; /* Add space between logo and links */
+  }
+
+  /* Adjust the logo size */
+  .logo h2 {
+    font-size: 18px; /* Adjust font size for the logo */
+  }
+
+  /* Center and display navigation items as a row */
+  .nav .link ul {
+    flex-direction: row; /* Display items horizontally */
+    justify-content: center; /* Center align items */
+    padding-top: 10px; /* Adjust top padding */
+  }
+
+  /* Style for individual list items */
+  .nav .link ul li {
+    margin: 0 10px; /* Add margin between list items */
+  }
+
+
+  
+    /* Adjustments for the main section */
+    .hero .main {
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 10px;
+      gap: 1rem;
+      margin-top: 10px;
+    }
+  
+    .hero .main .men {
+      width: 80%;
+      max-width: 300px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .hero .main .main-detil {
+      margin-top: 20px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .hero .main .main-detil h1 {
+      font-size: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+    .social i {
+      font-size: 35px;
+      margin: 10px;
+      padding-bottom: 20px;
+      padding-top: 5px;
+    }
+
+
+    /* Adjustments for about section */
+    #about{
+        height: 130vh;
+    }
+    .about-paragraph {
+        text-align: justify; /* Justify text for better readability */
+        padding-left: 30px; /* Add left-side space */
+        padding-right: 10px; /* Remove margin on smaller screens */
+    }
+    
+    .tab-titles {
+        padding-left: 30px; /* Add left-side space for the tab titles */
+        margin-bottom: 20px; /* Adjust margin for spacing between paragraphs */
+    }
+    
+    .tab-links {
+        font-size: 12px; /* Adjust font size for tab links on smaller screens */
+    }
+    
+    .tab-contents ul {
+        padding-left: 30px; /* Add left-side space for the ul list inside tab contents */
+        list-style: none; /* Remove default list styles */
+    }
+    
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%; /* Full width for both columns on smaller screens */
+        padding-left: 0; /* Reset padding for these columns */
+        padding-right: 0; /* Reset padding for these columns */
+    }
+    
+    .about-col-1 img {
+        border-radius: 5px 5px 0 0; /* Adjust border-radius for the image */
+    }
+    
+    
+
+ /* Adjustments for certificates section */
+ #certificates {
+    height: auto;
+    padding-top: 200px;
+    padding-bottom: 0;
+    margin-bottom: -20px;
+ }
+
+ .certificates-list div {
+    font-size: 12px; /* Adjust font size for certificates on smaller screens */
+    padding: 20px; /* Adjust padding for certificates on smaller screens */
+}
+
+.certificates-list div h3 {
+    font-size: 20px; /* Adjust font size for certificate headings on smaller screens */
+}
+ 
+/* Adjustments for project section */
+#projects {
+    margin-top: -140px;
+    padding-top: 0px;
+    display: flex;
+    height: auto;
+   
+}
+#projects .project {
+    margin-top: -20px; /* Remove or reduce margin at the top of the projects content */
+}
+
+.projects-list {
+    grid-gap: 5px;/* Adjust grid gap for smaller screens */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center; /* Center align the grid items */
+    align-items: center; /* Center align vertically */
+
+}
+
+.projects-list div {
+    padding: 20px; /* Adjust padding for projects on smaller screens */
+    font-size: 14px;
+    text-align: center; /* Adjust font size for projects on smaller screens */
+    margin: 30px;
+}
+
+
+.projects-list div h2 {
+    font-size: 20px; /* Adjust font size for project headings on smaller screens */
+}
+
+  
+    /* Adjustments for contact section */
+    #contact {
+        padding-bottom: 580px; /* Increase padding to provide space for the copyright notice */
+        position: relative;
+        padding-top: 400px;
+        height: auto;
+    }
+    
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .contact-left .btn2 {
+        margin-top: 10px; /* Adjust margin-top */
+    }
+      
+
+    .contact-left p,
+    .contact-left .social-icons,
+    .contact-left .btn2 {
+        margin-top: 10px;
+        margin-left: 30px;
+     
+    }
+    
+    form input,
+    form textarea,
+    form .btn2 {
+        width: calc(100% - 60px); /* Adjust the width */
+        margin: 5px 20px; /* Add margins */
+        box-sizing: border-box; /* Include padding and border in width calculation */
+         /* Adjust padding */
+        padding-top:20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        border-width: 1px solid;
+        margin-top: 10px;
+        
+    }
+    
+    form .btn2 {
+        display: block;
+        margin-top: 10px;
+        padding: 12px 30px;
+    }
+    
+    .contact-right {
+        position: relative;
+        margin-top: 80px; /* Add space at the top */
+    }
+    
+    #msg {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        color: brown;
+        padding-bottom: 80px;
+    }
+    
+    /* Style for the copyright notice */
+    .copyright {
+        position: absolute;
+        bottom: 0;
+        width: 117%;
+        text-align: center;
+        padding: 10px 0;
+        background: #00008b;
+        font-weight: 300;
+        color: brown;
+        z-index: 1;
+    }
+   
+}
